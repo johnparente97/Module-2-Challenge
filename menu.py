@@ -209,7 +209,7 @@ for item in order_list:
     print(f"{item_name}{item_spaces}| ${item_price:.2f} | {item_quantity}")
 
 # 11. Calculate the cost of the order using list comprehension
-total_cost = sum(item['price'] * item['quantity'] for item in order_list
+total_cost = sum(item['price'] * item['quantity'] for item in order_list)
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
 print(f"\nTotal Order Cost: ${total_cost:.2f}\n")
